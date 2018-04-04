@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+	tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label,
+	legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent
+}
+
+body {
+	line-height: 1
+}
+
+ol, ul {
+	list-style: none
+}
+
+blockquote, q {
+	quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none
+}
+
+:focus {
+	outline: 0
+}
+
+ins {
+	text-decoration: none
+}
+
+del {
+	text-decoration: line-through
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+a {
+	text-decoration: none;
+	color: #fff
+}
+
+body {
+	font-family: "Kreon";
+	font-weight: 300;
+	color: #333;
+	background: #fff;
+}
+
+#switcher {
+	height: 54px;
+	z-index: 99999;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background: #000;
+}
+
+.center {
+	width: 100%;
+	padding-top: 0
+}
+
+.center ul li {
+	display: inline;
+	float: left;
+	position: relative
+}
+
+.logoTop, .top2 {
+	margin-left: 30px;
+	margin-top: 20px;
+	color: #fff;
+	font-weight: bold;
+	font-family: "微软雅黑"
+}
+
+.top2 {
+	position: relative;
+	margin-top: 16px;
+	font-size: 12px;
+	font-weight: normal;
+	background-image: url(../i/2vm.png);
+	background-repeat: no-repeat;
+	background-position: 3px center;
+	height: 20px;
+	padding-left: 25px;
+	line-height: 20px;
+	border: 1px solid #414141;
+	padding-right: 5px;
+	border-radius: 5px;
+}
+
+.vm {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	background-color: #fff;
+	height: 170px;
+	width: 150px;
+	display: none;
+	padding: 30px;
+}
+
+.top2:hover .vm {
+	display: block
+}
+
+.logoTop a:hover {
+	text-decoration: underline
+}
+
+#iframe-wrap {
+	height: 100%;
+	overflow: visible;
+	position: relative;
+	top: 54px;
+	z-index: 50
+}
+
+.tablet-width {
+	height: 960px !important;
+	margin: 0 auto;
+	padding: 175px 100px 115px 100px;
+	width: 785px;
+	margin-top: 40px;
+	background: url(../i/bg-mob.png) no-repeat 0 0
+}
+
+.tablet-width iframe {
+	height: 960px !important
+}
+
+
+
+#by {
+	overflow-y: hidden
+}
