@@ -1,12 +1,7 @@
 package com.bf.common;
 
 import java.util.List;
-/**
- * 封装分页对象
- * @author Administrator
- *
- * @param <T>
- */
+
 public class PageView<T> {
 	private List<T> pageList;
 
