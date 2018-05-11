@@ -3,8 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
 	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 %>
 <!DOCTYPE html>
@@ -139,7 +138,7 @@
 </script>
 
 <style type="text/css">
-input,select {
+input, select {
 	width: 100%;
 	border: 0px;
 	height: 100%;
@@ -195,11 +194,14 @@ input,select {
 						<!-- END 风格定制 -->
 						<!-- BEGIN 网页的标题和面包屑-->
 						<h3 class="page-title">
-							<strong> 员工<small>修改员工</small> </strong>
+							<strong> 员工<small>修改员工</small>
+							</strong>
 						</h3>
 						<ul class="breadcrumb">
-							<li><strong> <a href="${pageContext.request.contextPath}/index.jsp">我的桌面</a> <a
-									href="${pageContext.request.contextPath}/hrm/getEmployeeByPage.action">员工管理</a>修改员工</strong></li>
+							<li><strong> <a
+									href="${pageContext.request.contextPath}/index.jsp">我的桌面</a> <a
+									href="${pageContext.request.contextPath}/hrm/getEmployeeByPage.action">员工管理</a>修改员工
+							</strong></li>
 						</ul>
 						<!-- END 网页的标题和面包屑-->
 					</div>
@@ -242,12 +244,13 @@ input,select {
 												<strong><label class="control-label"> 员工头像:
 												</label> </strong> <img id="img" alt=""
 													src="${pageContext.request.contextPath}/upload/${emp.empPhotoUrl}"
-													style="width:10px;z-index: 10">
+													style="width: 10px; z-index: 10">
 												<div class="controls">
 													<strong><a class="file">选择头像 <input
 															onchange="showImg(this.value)"
 															style="width: 1700px; height: 138px;" name="empPhotoUrl"
-															value="${emp.empPhotoUrl}" type="file" id="doc" /> </a> </strong>
+															value="${emp.empPhotoUrl}" type="file" id="doc" />
+													</a> </strong>
 												</div>
 											</div>
 										</div>
@@ -326,9 +329,10 @@ input,select {
 												<div class="controls">
 													<strong><label class="radio"> <input
 															type="radio" name="empSex" value="男"
-															class="m-wrap span12" checked> 先生 </label> <label
-														class="radio"> <input type="radio" name="empSex"
-															value="女" class="m-wrap span12"> 女士 </label> </strong>
+															class="m-wrap span12" checked> 先生
+													</label> <label class="radio"> <input type="radio"
+															name="empSex" value="女" class="m-wrap span12"> 女士
+													</label> </strong>
 												</div>
 											</div>
 										</div>
@@ -357,10 +361,11 @@ input,select {
 												<div class="controls">
 													<strong><label class="radio"> <input
 															type="radio" name="maritalStatus" value="1"
-															class="m-wrap span12" checked> 已婚 </label> <label
-														class="radio"> <input type="radio"
+															class="m-wrap span12" checked> 已婚
+													</label> <label class="radio"> <input type="radio"
 															name="maritalStatus" value="0" class="m-wrap span12">
-															未婚 </label> </strong>
+															未婚
+													</label> </strong>
 												</div>
 											</div>
 										</div>
@@ -371,27 +376,29 @@ input,select {
 											<div class="control-group">
 												<strong><label class="control-label"> 部门职务
 												</label> </strong>
+
 												<div class="controls">
 													<strong><select id="positionselect" name="deptId"
 														class="m-wrap span6">
 															<option value="-1">请选择</option>
 															<c:forEach items="${depts }" var="dept">
-																<option
-																	<c:if test="${emp.dep.deptId == dept.deptId  }">selected="selected"</c:if>
+																<option> <c:if test="${emp.dep.deptId == dept.deptId }">selected="selected"</c:if>
 																	value="${dept.deptId }">${dept.deptName }</option>
 															</c:forEach>
 													</select> <select id="postselect" name="postId" class="m-wrap span6">
 
 															<option value="-1">请选择</option>
 															<c:forEach items="${positions }" var="pos">
-																<option
-																	<c:if test="${emp.pos.posId == pos.posId  }">selected="selected"</c:if>
+																<option> <c:if test="${emp.pos.posId == pos.posId  }">selected="selected"</c:if>
 																	value="${pos.posId }">${pos.posName }</option>
 															</c:forEach>
-													</select> </strong>
+													</select> 
+													</strong>
+											
 												</div>
 											</div>
 										</div>
+										
 										<div class="span6 ">
 											<div class="control-group">
 												<strong><label class="control-label"> 地址: </label>
