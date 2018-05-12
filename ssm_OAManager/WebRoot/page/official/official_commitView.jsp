@@ -74,6 +74,7 @@
 	    		$(".t").bind("click",function(){
 	    			var empId = $(this).find("td").first().text();
 	    			var empName =  $(this).find("td:eq(1)").text();
+	    			/* var deptName = $(this).find("td:eq(2)").text(); */
 	    			var posName =  $(this).find("td:eq(3)").text();
 	    			
 	    			if($(".pos").size()>1){
@@ -274,8 +275,8 @@
 				var url="../pages_hr/hr_post!ajaxLoadPostByPositionId?id="+id+"&v="+new Date().valueOf();
 				$.getJSON(url,function(d){
 					var chtml="";
-					for ( var int = 0; int < d.length; int++) {
-						chtml+="<option value='"+d[int].postId+"'>"+d[int].postName+"</option>";
+					for ( var i = 0; i < d.length; i++) {
+						chtml+="<option value='"+d[i].postId+"'>"+d[i].postName+"</option>";
 					}
 					$('#postselect').html(chtml);
 				});
@@ -284,8 +285,8 @@
 			var roleurl="../pages_sys/sys_role!ajaxLoadSysRole?v="+new Date().valueOf();
 			$.getJSON(roleurl,function(d){
 				var chtml="";
-				for ( var int = 0; int < d.length; int++) {
-					chtml+="<option value='"+d[int].roleid+"'>"+d[int].rolename+"</option>";
+				for ( var i = 0; i < d.length; i++) {
+					chtml+="<option value='"+d[i].roleid+"'>"+d[i].rolename+"</option>";
 				}
 				role.append(chtml);
 			});
