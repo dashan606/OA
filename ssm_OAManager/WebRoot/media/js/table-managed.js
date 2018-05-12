@@ -20,8 +20,8 @@
                   { "bSortable": false }
                 ],
                 "aLengthMenu": [
-                    [5, 15, 20, -1],
-                    [5, 15, 20, "All"] // change per page values here
+                    [5, 10, 15, 20, -1],
+                    [5, 10, 15, 20, "All"] // change per page values here
                 ],
                 // set the initial value
                 "iDisplayLength": 5,
@@ -61,8 +61,8 @@
             // begin second table
             $('#sample_2').dataTable({
                 "aLengthMenu": [
-                    [5, 15, 20, -1],
-                    [5, 15, 20, "All"] // change per page values here
+                    [5, 10, 15, 20, -1],
+                    [5, 10, 15, 20, "All"] // change per page values here
                 ],
                 // set the initial value
                 "iDisplayLength": 5,
@@ -102,8 +102,8 @@
             // begin: third table
             $('#sample_3').dataTable({
                 "aLengthMenu": [
-                    [5, 15, 20, -1],
-                    [5, 15, 20, "All"] // change per page values here
+                    [5, 10, 15, 20, -1],
+                    [5, 10, 15, 20, "All"] // change per page values here
                 ],
                 // set the initial value
                 "iDisplayLength": 5,
