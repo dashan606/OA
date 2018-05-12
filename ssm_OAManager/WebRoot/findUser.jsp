@@ -116,7 +116,7 @@
 	</div>
 	<!-- END LOGIN -->
 	<!-- BEGIN COPYRIGHT -->
-	<div class="copyright">2017 &copy; Party - OA软件办公管理系统</div>
+	<div class="copyright">2018 &copy; Party - OA软件办公管理系统</div>
 	<!-- END COPYRIGHT -->
 	<jsp:include page="/media/ui_js.jsp"></jsp:include>
 	<!-- BEGIN PAGE LEVEL PLUGINS -->

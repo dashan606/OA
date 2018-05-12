@@ -111,7 +111,7 @@
 					</div>
 			</div>
 		</div>
-		<div class="page-footer">2010-2017 &copy; Party - OA软件办公管理系统</div>
+		<div class="page-footer">2018 &copy; Party - OA软件办公管理系统</div>
 	</div>
 	<jsp:include page="/media/ui_js.jsp"></jsp:include>
 	<!-- BEGIN PAGE LEVEL PLUGINS -->

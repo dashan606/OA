@@ -172,17 +172,19 @@
 					</div>
 				</div>
 			</div>
+			
 			<div class="control-group">
 				<label class="control-label visible-ie8 visible-ie9">员工姓名</label>
 				<div class="controls">
 					<div class="input-icon left">
 						<i class="icon-user"></i> <input class="m-wrap placeholder-no-fix"
-							type="text" placeholder="员工姓名" id="emp_id" name="" /> <input
+							type="text" placeholder="员工姓名" id="emp_id" name="emp.empName" /> <input
 							class="m-wrap placeholder-no-fix" type="hidden"
 							placeholder="员工编号" id="emp_idss" name="emp.empId" />
 					</div>
 				</div>
 			</div>
+			
 			<div class="control-group">
 				<label class="control-label visible-ie8 visible-ie9">密码</label>
 				<div class="controls">
@@ -214,7 +216,7 @@
 					</div>
 					<ul class="on_changes">
 						<li email="">请选择邮箱类型</li>
-						<li email=""></li>
+						<!-- <li email=""></li> -->
 						<li email="@sina.com"></li>
 						<li email="@163.com"></li>
 						<li email="@qq.com"></li>
@@ -489,6 +491,7 @@
 					BtnL : "确定",
 					FunL : alerts
 				});
+				/* empId.focus();//获取文本框焦点 */
 				return false;
 			}
 
