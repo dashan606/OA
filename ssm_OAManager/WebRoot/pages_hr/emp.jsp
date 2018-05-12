@@ -105,14 +105,13 @@
 										<li><span>电话:</span>${user.emp.empTelephone}</li>
 										<li><span>生日:</span> <fmt:formatDate
 												value="${user.emp.empBrithday}" pattern="yyyy-MM-dd " /></li>
-										<li><span>地址:</span>${user.emp.empName}</li>
-										<li><span>Email:</span>${user.userEmail}<a href="#"></a>
-										</li>
+										<li><span>Email:</span>${user.userEmail}<a href="#"></a></li>
+										<li><span>工资:</span>${user.emp.empSalary} 元</li>
 										<li><span>入职日期:</span> <fmt:formatDate
 												value="${user.emp.empEntryDate}" pattern="yyyy-MM-dd " /></li>
 										<li><span>地址:</span>${user.emp.empAddress}</li>
-										<li><span>部门:</span>${user.emp.empName}</li>
-										<li><span>职位:</span>${user.emp.empName}</li>
+										<li><span>部门:</span>${user.emp.dep.deptName}</li>
+										<li><span>职位:</span>${user.emp.pos.posName}</li>
 									</ul>
 								</div>
 								<!--tab_1_2-->
