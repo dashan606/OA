@@ -194,8 +194,8 @@ public class OfficialController extends BaseController{
 			Model model,HttpServletRequest request) throws Exception{
 
 		//get请求转码
-		String str = new String(flow.getFlowName().getBytes("iso8859-1"), "UTF-8");
-		flow.setFlowName(str);
+//		String str = new String(flow.getFlowName().getBytes("iso8859-1"), "UTF-8");
+//		flow.setFlowName(str);
 
 		//获取当前时间
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
