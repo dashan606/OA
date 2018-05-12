@@ -297,8 +297,8 @@
 					var url = "person_calen!ajaxGetEventByEmpId?v="
 							+ new Date().valueOf();
 					$.getJSON(url, function(d) {
-						for ( var int = 0; int < d.length; int++) {
-							addEvent(d[int].title);
+						for ( var i = 0; i < d.length; i++) {
+							addEvent(d[i].title);
 						}
 					});
 
