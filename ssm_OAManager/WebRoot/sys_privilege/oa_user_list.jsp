@@ -100,6 +100,7 @@
 								<label><input type="checkbox" checked data-column="1">员工名称</label>
 								<label><input type="checkbox" checked data-column="2">邮箱</label>
 								<label><input type="checkbox" checked data-column="3">所属部门</label>
+								<label><input type="checkbox" checked data-column="4">职位</label>
 							</div>
 						</div>
 					</div>
@@ -113,6 +114,7 @@
 								<th>员工名称</th>
 								<th>邮箱</th>
 								<th>所属部门</th>
+								<th>职位</th>
 								<th>操作</th>
 							</tr>
 						</thead>
@@ -129,6 +131,7 @@
 									${obj.userEmail }
 									</td>
 									<td >${obj.dep.deptName }</td>
+									<td >${obj.emp.pos.posName }</td>
 									<td>
 										<!-- begin操作按钮 -->
 											<div class="btn-group" style="margin-bottom: 0px !important;">
