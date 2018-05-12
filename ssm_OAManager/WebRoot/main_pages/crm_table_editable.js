@@ -45,8 +45,8 @@ var TableEditable = function() {
 
 			var oTable = $('#sample_editable_1').dataTable({
 				"aLengthMenu" : [ 
-				        [ 5, 10, 15, -1 ],
-						[ 5, 10, 15, "All" ] // change per page values here
+				        [ 5, 10, 15, 20, -1 ],
+						[ 5, 10, 15, 20, "All" ] // change per page values here
 				],
 				// set the initial value
 				"iDisplayLength" : 5,
