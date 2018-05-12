@@ -89,7 +89,7 @@
 										<tr>
 											<th>序号</th>
 											<th>工号</th>
-											<th>姓名</th>
+											<th>姓&nbsp;&nbsp;&nbsp;&nbsp;名</th>
 											<th>性别</th>
 											<th>年龄</th>
 											<th>生日</th>
@@ -101,9 +101,9 @@
 											<th>头像</th>
 											<th>用户名</th>
 											<th>邮箱</th>
-											<th>部门</th>
-											<th>岗位</th>
-											<th>操作</th>
+											<th>部&nbsp;&nbsp;门</th>
+											<th>岗&nbsp;&nbsp;位</th>
+											<th>操&nbsp;作</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -131,7 +131,7 @@
 												</td>
 												<td>${emp.user.userName}</td>
 												<td>${emp.user.userEmail }</td>
-												<td>${emp.dep.deptNumber}</td>
+												<td>${emp.dep.deptName}</td>
 												<td>${emp.pos.posName }</td>
 												<td>
 													<!-- begin操作按钮 -->
