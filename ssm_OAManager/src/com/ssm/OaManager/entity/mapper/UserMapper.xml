@@ -164,17 +164,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<!--通过账号密码查询一条数据 -->
 	<select id="findByNp" parameterType="com.ssm.OaManager.entity.User"
 		resultMap="userMap">
-		select * from tb_user u inner join TB_Emplyee e on u.user_id
-		=e.user_id inner
-		JOIN tb_department t on t.dept_id = e.dept_id inner
-		join tb_position p on e.pos_id=p.pos_id left
-		join tb_rumiddle ru
-		on
-		u.user_id = ru.user_id left join tb_role r on
-		r.role_id =ru.role_id
+		select * from tb_user u 
+		inner join TB_Emplyee e on u.user_id = e.user_id 
+		inner join tb_department t on t.dept_id = e.dept_id 
+		inner join tb_position p on e.pos_id=p.pos_id 
+		left join tb_rumiddle ru on u.user_id = ru.user_id 
+		left join tb_role r on r.role_id =ru.role_id
 		left join tb_rfmiddle m on r.role_id = m.role_id
-		left join tb_function
-		f on m.fun_id = f.fun_id
+		left join tb_function f on m.fun_id = f.fun_id
 		where
 		u.user_name=#{userName}
 		<if test="userPassword!=null">
@@ -194,17 +191,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<!-- 分页查询数据 -->
 	<select id="findByPage" parameterType="com.ssm.OaManager.utils.PageBean"
 		resultMap="userMap">
-		select *
-		from tb_user u left join TB_Emplyee e on u.user_id =e.user_id
-		left
-		JOIN tb_department t on t.dept_id = e.dept_id left join
-		tb_rumiddle ru
-		on u.user_id = ru.user_id left join tb_role r on
-		r.role_id =ru.role_id
+		select * from tb_user u 
+		left join TB_Emplyee e on u.user_id =e.user_id
+		left join tb_department t on t.dept_id = e.dept_id 
+		left join tb_position p on e.pos_id = p.pos_id 
+		left join tb_rumiddle ru on u.user_id = ru.user_id 
+		left join tb_role r on r.role_id =ru.role_id
 		left join tb_rfmiddle m on r.role_id = m.role_id
-		left join tb_function
-		f
-		on m.fun_id = f.fun_id
+		left join tb_function f on m.fun_id = f.fun_id
 		where 1=1
 		<if test="paraMap.userId!=null">
 			and u.user_id != #{paraMap.userId}
