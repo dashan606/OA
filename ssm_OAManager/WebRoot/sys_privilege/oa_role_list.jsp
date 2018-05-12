@@ -274,7 +274,7 @@
 						<label class="control-label">角色详细：</label>
 						<div class="controls">
 							<input name="roleDescripti" type="text"
-								class="m-wrap span10" placeholder="选填">
+								class="m-wrap span10" placeholder="必填">
 						</div>
 					</div>
 				</div>
