@@ -44,8 +44,8 @@
 								alert("员工工号不能为空!");
 								return false;
 							}
-							if (number.length > 5) {
-								alert("员工工号不能超过5个字符!");
+							if (number.length > 12) {
+								alert("员工工号不能超过12个字符!");
 								return false;
 							}
 
