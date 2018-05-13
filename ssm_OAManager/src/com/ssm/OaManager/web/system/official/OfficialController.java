@@ -18,6 +18,7 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -854,6 +855,9 @@ public class OfficialController extends BaseController{
 			List<Employee> emps = employeeService.findAllByPos(pos);
 			
 			String string = JSON.toJSONString(emps);
+			
+			System.out.println("根据职位查询员工:\n"+string);
+			
 			response.getWriter().write(string);
 		}else{
 			//通知申请人

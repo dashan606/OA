@@ -443,11 +443,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<!-- 通过职位查询员工 -->
 	<select id="findAllByPos" parameterType="com.ssm.OaManager.entity.hrm.Position"
 		resultMap="employeeMap">
-		SELECT * FROM
-		tb_emplyee
+		SELECT * FROM tb_emplyee e
+		left join tb_department t on t.dept_id = e.dept_id 
+		left join tb_position p on e.pos_id = p.pos_id 
 		<where>
 			<if test="posId!=null">
-				pos_id = #{posId}
+				e.pos_id = #{posId}
 			</if>
 		</where>
 	</select>

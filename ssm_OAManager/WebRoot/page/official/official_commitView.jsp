@@ -67,7 +67,11 @@
   				$(".t").remove();
   				
 				for(var i = 0;i<data.length;i++){
-					var $tr = $("<tr data-dismiss='modal' class='t' ><td>"+data[i].empId+"</td><td>"+data[i].empName+"</td><td></td><td></td></tr>");
+					var $tr = $("<tr data-dismiss='modal' class='t' ><td>"
+								+data[i].empId +"</td><td>"
+								+data[i].empName +"</td><td>"
+								+data[i].dep.deptName +"</td><td>"
+								+data[i].pos.posName +"</td></tr>");
    					$trOne.after($tr);
   				}
   				
@@ -185,7 +189,7 @@
 																	<select  name="stepInstances[${s.index }].emp.empId">
 																		<option id="p${s.index }" class="sel"></option>
 																	</select>
-																	<a onclick="selectEmp('${toStep.stepAppoint}','${s.index }','${official.offiId }')" href="#myModal2"  data-toggle="modal"  lang="1" title="">选择员工</a>
+																	<a onclick="selectEmp('${toStep.stepAppoint}','${s.index }','${official.offiId }')" href="#myModal2"  data-toggle="modal"  lang="1" title="">选择审批人</a>
 																</div>
 													</div>		
 												</c:forEach>

@@ -167,10 +167,12 @@
 									<label><input type="checkbox" checked data-column="1">公文名称</label>
 									<label><input type="checkbox" checked data-column="2">所属流程</label>
 									<label><input type="checkbox" checked data-column="3">创建时间</label>
-									<label><input type="checkbox" checked data-column="4">创建用户</label>
-									<label><input type="checkbox" checked data-column="5">查看附件</label>
-									<label><input type="checkbox" checked data-column="6">审批</label>
-									<label><input type="checkbox" checked data-column="7">审批结果</label>
+									<label><input type="checkbox" checked data-column="4">创建用户ID</label>
+									<label><input type="checkbox" checked data-column="5">创建用户名</label>
+									<!-- <label><input type="checkbox" checked data-column="6">创建用户姓名</label> -->
+									<label><input type="checkbox" checked data-column="7">查看附件</label>
+									<label><input type="checkbox" checked data-column="8">审批</label>
+									<label><input type="checkbox" checked data-column="9">审批结果</label>
 								</div>
 							</div>
 						</div>
@@ -185,7 +187,9 @@
 									<th>公文名称</th>
 									<th>所属流程</th>
 									<th>创建时间</th>
-									<th>创建用户</th>
+									<th>创建用户ID</th>
+									<th>创建用户名</th>
+									<!-- <th>创建用户姓名</th> -->
 									<th>查看附件</th>
 									<th>提交</th>
 									<th>审批</th>
@@ -201,6 +205,8 @@
 										<th>${official.flow.flowName }</th>
 										<th>${official.offiDate }</th>
 										<th>${official.user.userId }</th>
+										<th>${official.user.userName }</th>
+										<%-- <th>${official.user.emp.empName }</th> --%>
 										<th><a
 											href="${pageContext.request.contextPath }/official_down.action?offiId=${official.offiId}">
 												下载附件 </a></th>
