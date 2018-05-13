@@ -44,8 +44,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		inner join
 		TB_USER u
 		on e.user_id = u.user_id
-		where 1=1
-		and u.state = 1
 		<where>
 			<if test="paraMap.empNumber!=null">
 				e.EMP_Number like #{paraMap.empNumber},
