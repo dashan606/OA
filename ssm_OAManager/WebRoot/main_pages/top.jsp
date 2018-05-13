@@ -113,7 +113,7 @@
 										area : '520px',
 										shade : 0.8,
 										id : 'LAY_layuipro', //设定一个id，防止重复弹出
-										btn : [ '火速围观' ],
+										btn : [ '朕已阅，退下吧' ],
 										moveType : 1, //拖拽模式，0或者1
 										content : '<div style="padding:50px;text-align:justify; line-height: 22px; text-indent:2em;border-bottom:1px solid #e2e2e2;"><p><span><font color="red"  style="font-weight: 900;">标题：</font></span>'
 												+ amtheme
