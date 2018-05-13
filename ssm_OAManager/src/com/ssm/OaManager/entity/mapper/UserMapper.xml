@@ -136,7 +136,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		f
 		on m.fun_id = f.fun_id
 		where
-		u.user_id=#{userId}
+		u.state = 1 
+		and u.user_id=#{userId}
 	</select>
 
 	<!--通过激活码查询一条数据 -->
@@ -186,6 +187,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		* from
 		tb_user u left join
 		tb_emplyee e on u.emp_id = e.emp_id
+		where
+		u.state = 1 
 	</select>
 
 	<!-- 分页查询数据 -->
@@ -200,6 +203,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		left join tb_rfmiddle m on r.role_id = m.role_id
 		left join tb_function f on m.fun_id = f.fun_id
 		where 1=1
+		and u.state = 1 
 		<if test="paraMap.userId!=null">
 			and u.user_id != #{paraMap.userId}
 		</if>
@@ -212,6 +216,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select
 		count(*)
 		from tb_user u
+		where 1=1
+		and u.state = 1
 	</select>
 
 	<!-- 添加数据 -->
@@ -241,8 +247,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		left join tb_function
 		f
 		on m.fun_id = f.fun_id
-		where e.dept_id =
-		#{dep.deptId}
+		where 1=1
+		and u.state = 1
+		and e.dept_id = #{dep.deptId}
 
 	</select>
 	<!-- 根据角色查询数据 <select id="findByRoleId" parameterType="java.io.Serializable" 

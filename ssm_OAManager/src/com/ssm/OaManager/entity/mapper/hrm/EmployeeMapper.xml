@@ -44,6 +44,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		inner join
 		TB_USER u
 		on e.user_id = u.user_id
+		where 1=1
+		and u.state = 1
 		<where>
 			<if test="paraMap.empNumber!=null">
 				e.EMP_Number like #{paraMap.empNumber},
@@ -78,7 +80,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		TB_Emplyee
 	</select>
 	
-	<!-- 查询所有员工工号 -->
+	<!--根据部门ID查询该部门所有员工工号 -->
 	<select id="getEmpNumber" parameterType="java.io.Serializable" resultMap="employeeMap">
 		select emp_number from
 		TB_Emplyee where dept_Id = #{dep.deptId}
@@ -94,7 +96,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		left join
 		TB_USER u
 		on e.user_id = u.user_id
-		where e.EMP_ID = #{id}
+		where 1=1
+		and u.state = 1
+		and e.EMP_ID = #{id}
 	</select>
 
 	<!-- 根据用户查询员工信息 -->
