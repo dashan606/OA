@@ -31,6 +31,20 @@ public class MailUtil {
 	       props.setProperty("mail.pop3.host", "pop3.163.com"); 
 	       props.setProperty("mail.pop3.auth", "true");   
 	       
+	   }else if(mailAddr.split("@")[1].startsWith("126")&&keyword.equals("SMTP")){
+		   
+		  props = new Properties();
+		  props.setProperty("mail.smtp.auth","true");
+		  props.setProperty("mail.transport.protocol","smtp");
+		  props.setProperty("mail.host","smtp.126.com"); 
+		  
+	   }else if(mailAddr.split("@")[1].startsWith("126")&&keyword.equals("POP3")){
+		   
+		   props = new Properties();
+		   props.setProperty("mail.store.protocol", "pop3");      
+	       props.setProperty("mail.pop3.host", "pop3.126.com"); 
+	       props.setProperty("mail.pop3.auth", "true");   
+	       
 	   }else if(mailAddr.split("@")[1].startsWith("qq")&&keyword.equals("SMTP")){
 		   
 		   props = new Properties();
