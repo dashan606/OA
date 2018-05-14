@@ -12,12 +12,7 @@ import org.springframework.web.bind.annotation.InitBinder;
 
 import com.ssm.OaManager.entity.User;
 
-/**
- * @Description:
- * @Author: albin
- * 
- * 
- */
+
 public abstract class BaseController {
 	@InitBinder
 	// 此方法用于日期的转换，如果未加，当页面日期格式转换错误，将报400错误，实际是因为此方法
