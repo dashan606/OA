@@ -64,9 +64,11 @@
 			</ul></li>
 
 
+
+
 		<li class=""><a href="javascript:;"> <i class="icon-table"></i>
 
-				<span class="title">人事管理</span> <span class="arrow"></span> </a>
+				<span class="title">财务管理</span> <span class="arrow"></span> </a>
 
 			<ul class="sub-menu">
 
@@ -89,6 +91,17 @@
 						</li>
 
 					</ul></li>
+				
+
+			</ul></li>
+			
+			<li class=""><a href="javascript:;"> <i class="icon-table"></i>
+
+				<span class="title">人事管理</span> <span class="arrow"></span> </a>
+
+			<ul class="sub-menu">
+
+				
 				<li><a href="javascript:;"><i class=" icon-male"></i>组织架构 <span
 						class="arrow"></span> </a>
 					<ul class="sub-menu">
@@ -107,6 +120,22 @@
 					</ul></li>
 
 			</ul></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		<li class=""><a href="javascript:;"> <i class="icon-book"></i>
 
@@ -143,7 +172,7 @@
 
 		<li class=""><a href="javascript:;"> <i class="icon-wrench"></i>
 
-				<span class="title">实用工具</span> <span class="arrow "></span> </a>
+				<span class="title">资产管理</span> <span class="arrow "></span> </a>
 
 			<ul class="sub-menu">
 
