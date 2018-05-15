@@ -45,11 +45,6 @@ import com.ssm.OaManager.service.system.UserService;
 import com.ssm.OaManager.utils.MailUtil;
 import com.ssm.OaManager.utils.PrivilegeFilter;
 
-/**
- * 
- * @author TH
- * 
- */
 @Controller
 public class MailController {
 
