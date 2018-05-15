@@ -215,7 +215,7 @@
 					
 						<li><a
 							href="${pageContext.request.contextPath}/sys_privilege/findByFunPage.action"><i
-								class="icon-wrench"></i>功能管理</a>
+								class="icon-wrench"></i>权限控制</a>
 						</li>
 						<li><a
 							href="${pageContext.request.contextPath}/sys_privilege/findByRolePage.action"><i
