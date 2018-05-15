@@ -74,11 +74,11 @@
 					<!-- END 风格定制 -->
 					<!-- BEGIN 网页的标题和面包屑-->
 					<h3 class="page-title">
-						角色授权<small>角色授权页</small>
+						用户授权<small>用户授权页</small>
 					</h3>
 					<ul class="breadcrumb">
 						<li>	<a href="${pageContext.request.contextPath}/index.jsp">我的桌面</a>  <i class="icon-angle-right"></i>
-								<a href="${pageContext.request.contextPath}/fixedAsset/findAssetUserAll.action">角色授权</a> 
+								<a href="${pageContext.request.contextPath}/fixedAsset/findAssetUserAll.action">用户授权</a> 
 						</li>
 					</ul>
 					<!-- END 网页的标题和面包屑-->
@@ -89,7 +89,7 @@
 			<div class="portlet box blue">
 				<div class="portlet-title">
 					<div class="caption">
-						<i class="icon-globe"></i>角色授权
+						<i class="icon-globe"></i>用户授权
 					</div>
 					<div class="actions">
 						<div class="btn-group">
