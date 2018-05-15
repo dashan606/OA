@@ -134,7 +134,7 @@
 			<div class="portlet box blue">
 				<div class="portlet-title">
 					<div class="caption">
-						<i class="icon-globe"></i>办公用品类别
+						<i class="icon-globe"></i>办公用品管理
 					</div>
 					<div class="actions">
 						<div class="btn-group">
