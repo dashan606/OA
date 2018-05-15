@@ -46,7 +46,7 @@
 						<!-- END 风格定制 -->
 						<!-- BEGIN 网页的标题和面包屑-->
 						<h3 class="page-title">
-							出差管理<small>出差管理页</small>
+							请假管理<small>请假管理页</small>
 						</h3>
 						<ul class="breadcrumb">
 							<li><i class="icon-home"></i> <a href="${pageContext.request.contextPath}/index.jsp">我的桌面</a>
