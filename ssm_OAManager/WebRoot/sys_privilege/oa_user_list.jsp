@@ -10,7 +10,7 @@
 <!-- BEGIN HEAD -->
 <head>
 	<meta charset="utf-8" />
-	<title>角色授权</title>
+	<title>用户授权</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -178,7 +178,7 @@
 <div id="myModal2" class="modal hide  fade" style="width:600px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
 		<div class="modal-header ">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-			<h3 id="myModalLabel2"  style="color:black;"> 角色授权</h3>
+			<h3 id="myModalLabel2"  style="color:black;"> 用户授权</h3>
 		</div>
 		<div class="modal-body" >
 			<div class="row-fluid">
@@ -277,7 +277,7 @@
 	<script type="text/javascript">
 			$(".myModal2Update2").click(function(){
 					$(":input[name='user.userId']").val($(this).attr("title"));
-					var h5 = $("<h5>角色授权：</h5>");
+					var h5 = $("<h5>用户授权：</h5>");
 					var div = $("#div13");
 						div.html("");
 					div.append(h5);

@@ -64,8 +64,6 @@
 			</ul></li>
 
 
-
-
 		<li class=""><a href="javascript:;"> <i class="icon-table"></i>
 
 				<span class="title">财务管理</span> <span class="arrow"></span> </a>
@@ -120,21 +118,6 @@
 					</ul></li>
 
 			</ul></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 		<li class=""><a href="javascript:;"> <i class="icon-book"></i>
@@ -225,9 +208,6 @@
 
 			<ul class="sub-menu">
 
-				<li><a
-					href="${pageContext.request.contextPath}/page/user/fillByPage.action">
-						<i class="icon-cog"></i> 角色授权</a></li>
 				<li><a href="javascript:;"><i class="icon-cog"></i>权限管理 <span
 						class="arrow"></span> </a>
 
@@ -237,6 +217,9 @@
 							href="${pageContext.request.contextPath}/sys_privilege/findByRolePage.action"><i
 								class="icon-group"></i>角色管理</a>
 						</li>
+						<li><a
+							href="${pageContext.request.contextPath}/page/user/fillByPage.action">
+							<i class="icon-cog"></i> 用户授权</a></li>
 						<li><a
 							href="${pageContext.request.contextPath}/sys_privilege/findByFunPage.action"><i
 								class="icon-wrench"></i>功能管理</a>
