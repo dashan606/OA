@@ -16,9 +16,6 @@ import com.ssm.OaManager.utils.PrivilegeFilter;
 
 /***
  * 以下为本地服务 数据库
- * 
- * @author TH
- * 
  */
 @Controller
 public class MailDataController {
