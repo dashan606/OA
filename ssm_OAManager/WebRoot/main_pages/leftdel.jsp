@@ -103,14 +103,14 @@
 				<li><a href="javascript:;"><i class=" icon-male"></i>组织架构 <span
 						class="arrow"></span> </a>
 					<ul class="sub-menu">
-						<li><a
-							href="${pageContext.request.contextPath}/pages_hr/findPositionPages.action">
-								<i class="icon-hospital"></i> 职务管理</a>
-						</li>
 
 						<li><a
 							href="${pageContext.request.contextPath}/pages_hr/findDeptAll.action">
 								<i class="icon-indent-right"></i> 部门管理</a></li>
+						<li><a
+							href="${pageContext.request.contextPath}/pages_hr/findPositionPages.action">
+								<i class="icon-hospital"></i> 职务管理</a>
+						</li>
 
 						<li><a
 							href="${pageContext.request.contextPath}/hrm/getEmployeeByPage.action">
