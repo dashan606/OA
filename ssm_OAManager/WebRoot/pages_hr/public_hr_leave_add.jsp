@@ -79,7 +79,7 @@
 						<!-- END 风格定制 -->
 						<!-- BEGIN 网页的标题和面包屑-->
 						<h3 class="page-title">
-							<strong>请假管理<small>添加出差记录</small> </strong>
+							<strong>请假管理<small>添加请假记录</small> </strong>
 						</h3>
 						<ul class="breadcrumb">
 							<li><strong> <a
