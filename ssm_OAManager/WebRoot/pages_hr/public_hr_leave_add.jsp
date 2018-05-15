@@ -99,7 +99,7 @@
 						<div class="portlet box blue">
 							<div class="portlet-title">
 								<div class="caption">
-									<strong>添加出差记录 </strong>
+									<strong>添加请假记录 </strong>
 								</div>
 							</div>
 							<div class="portlet-body form">
