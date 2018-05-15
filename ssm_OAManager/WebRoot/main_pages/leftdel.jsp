@@ -212,7 +212,11 @@
 						class="arrow"></span> </a>
 
 					<ul class="sub-menu">
-
+					
+						<li><a
+							href="${pageContext.request.contextPath}/sys_privilege/findByFunPage.action"><i
+								class="icon-wrench"></i>功能管理</a>
+						</li>
 						<li><a
 							href="${pageContext.request.contextPath}/sys_privilege/findByRolePage.action"><i
 								class="icon-group"></i>角色管理</a>
@@ -220,10 +224,7 @@
 						<li><a
 							href="${pageContext.request.contextPath}/page/user/fillByPage.action">
 							<i class="icon-cog"></i> 用户授权</a></li>
-						<li><a
-							href="${pageContext.request.contextPath}/sys_privilege/findByFunPage.action"><i
-								class="icon-wrench"></i>功能管理</a>
-						</li>
+					
 
 					</ul></li>
 			</ul></li>
