@@ -13,9 +13,7 @@ import com.ssm.OaManager.dao.BaseDao;
 import com.ssm.OaManager.utils.PageBean;
 /**
  * @Description: 泛型类，基础的DAO实现类
- * @Author: albin
  * 
- * @CreateDate: 2014-2-25
  */
 public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements
 		BaseDao<T> {
